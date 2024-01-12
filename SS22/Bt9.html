@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt9</title>
+    </head>
+    <body>
+        <script>
+        let year=+prompt("Nhap so nam can tim");
+        let month=+prompt("Nhap thang can xem so ngay");
+        if (isNaN(year)&&isNaN<0) {
+            console.log("INVALD");   
+        }
+        else{
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log("thang co 31 ngay");
+                break;
+            case 2:
+                if (year%400==0||(year%4==0&&year%100!=0)) {
+                    console.log("thang co 29 ngay");
+                }
+                else console.log("thang co 28 ngay");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log("thang co 30 ngay");
+                break;
+        
+            default:
+                console.log("du lieu thang ko hop le");
+                break;
+        }
+    }
+    </script>
+    </body>
+</html>

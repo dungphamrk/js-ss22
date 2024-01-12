@@ -1,0 +1,24 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt2</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhap canh cua tam giac");
+        let b = +prompt("Nhap canh cua tam giac");
+        let c = +prompt("Nhap canh cua tam giac");
+        if (!isNaN(a)&&!isNaN(b)&&!isNaN(b)) {
+            if(a+b>c||a+c>b||b+c>a){
+                console.log("là tam giác")
+            }else{
+                console.log("không phải là tam giác")
+            }
+        }else{
+           console.log("INVALID")
+        }
+    </script>
+</body>
+</html>

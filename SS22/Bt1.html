@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt1</title>
+    </head>
+    <body>
+        <script>
+        let a=+prompt("Nhap a");
+        let b=+prompt("Nhap b");
+        if (isNaN(a)||isNaN(b)) {
+            console.log("INVALID");
+        }
+        else if (a>b) {
+            if (a%b==0) {
+                console.log("a chia het cho b");
+            }
+            else console.log("2 so ko chia het cho nhau");
+        }else{
+            if (b%a==0) {
+                console.log("b chia het cho a");
+            }
+            console.log("2 so ko chia het cho nhau");
+        }
+    </script>
+    </body>
+</html>

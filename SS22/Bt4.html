@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bt4</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("nhập năm");
+
+      if (!isNaN(a) && a > 0) {
+        if (a % 400 == 0 || (a % 4 == 0 && a % 100 != 0)) {
+          console.log("la nam nhuan");
+        } else {
+         console.log("là nam ko nhuan");
+        }
+      } else {
+        console.log("INVALID");
+      }
+    </script>
+  </body>
+</html>
